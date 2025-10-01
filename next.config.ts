@@ -1,6 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // Nilai tersebut 'incremental' memungkinkan Anda mengadopsi PPR untuk rute tertentu.
+  experimental: {
+    ppr: "incremental",
+  },
+
   /* config options here 
 
     Contoh konfigurasi berikut hanya akan mengizinkan gambar dari bucket AWS S3 tertentu:
